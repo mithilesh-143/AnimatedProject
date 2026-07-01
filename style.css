@@ -18,9 +18,9 @@ body {
     width: 2vw;
     border-radius: 50%;
     /* background-color: #fff; */
-    border: 2px solid #ffffffde;
+    border: 1px solid #ffffffde;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     mix-blend-mode: difference;
     transform: translate(-50% ,-50%);
 }
