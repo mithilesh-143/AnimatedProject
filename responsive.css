@@ -1,215 +1,321 @@
+/* ==========================================================================
+   Responsive Styles for Mobile Devices (Widths <= 768px)
+   ========================================================================== */
+
 @media (max-width: 768px) {
-    /* Loader Adjustments */
-    #loader {
-        padding: 30vh 5vw;
+
+    /* 1. Global & Cursor Alterations */
+    .mousefollower {
+        display: none !important;
+        /* Disables Shery mouse follower on mobile touchscreens */
     }
+
+    #flag {
+        display: none !important;
+        /* Hides the hover flag image on mobile viewports */
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 2. Preloader Adjustments */
+    #loader {
+        padding: 35vh 5vw;
+    }
+
     .line {
         gap: 4vw;
     }
-    #line1-part1 h5, 
+
+    #line1-part1 h5,
     #line1-part1 h6 {
         font-size: 6vw;
     }
+
     #line1-part1 h5 {
-        width: 10vw;
-    }
-    .line h1 {
-        font-size: 9vw;
-    }
-    .line h2 {
-        font-size: 7vw;
+        width: 12vw;
     }
 
-   
+    .line h1 {
+        font-size: 9.5vw;
+    }
+
+    .line h2 {
+        font-size: 8vw;
+    }
+
+
+    /* 3. Navigation Bar */
     #page1 #nav {
         padding: 6vw 5vw;
+        align-items: center;
     }
-    #nav svg {
-        width: 100px;
-        height: auto;
+
+    #page1 #nav svg {
+        width: 55px;
+        height: 21px;
     }
+
     #nav #nav-part2 {
         gap: 5vw;
     }
+
     #nav-part2 h4 {
         font-size: 3.5vw;
     }
 
-  
+    /* 4. Page 1 Hero Typography Layout */
+    #page1 {
+        height: 48vh;
+        width: 100%;
+        background-color: #0c0909;
+    }
+
     .hero {
         width: 90%;
-        margin-left: 5%;
+        margin-left: 7%;
     }
+
     .hero:nth-child(2) {
-        margin-top: 10vw;
+        margin-top: 15vw;
     }
-    .hero h1, 
-    .hero h2 {
-        font-size: 11vw;
-        line-height: 12vw;
-    }
+
     #hero1::before {
         font-size: 5vw;
         left: 0;
         top: -40%;
     }
-    .hero h2 {
-        border-bottom: 0.8vw solid #fff;
+
+    .hero h1 {
+        font-size: 11vw;
+        line-height: 12vw;
     }
 
-   
+    .hero h2 {
+        font-size: 11vw;
+        line-height: 12vw;
+        border-bottom: 0.8vw solid #fff;
+        padding-bottom: 1vw;
+    }
+
+    /* 5. Page 2 Video Showcase */
     #page2 {
-        margin-top: 20vw;
+        margin-top: 0vw;
         padding: 2vh;
     }
+
     #video-container {
         width: 90vw;
         height: 40vh;
         left: 5%;
     }
+
     #video-cursor {
-        height: 18vw;
-        width: 18vw;
-        top: -10%;
-        left: 75%;
-    }
-    #video-cursor i {
-        font-size: 5vw;
+        width: 20vw;
+        height: 20vw;
+        top: 50%;
+        left: 50%;
+        /* transform: translate(-50%, -50%) !important; */
+        pointer-events: none;
     }
 
-    
-    #page3 {
-        padding: 10vh 5vw;
-        margin-top: 10vw;
-        margin-bottom: 10vw;
+    #video-cursor i {
+        font-size: 6vw;
     }
+
+    /* 6. Page 3 Projects Section */
+    #page3 {
+        margin-top: 0vw;
+        margin-bottom: 0%;
+        padding: 10vh 4vw;
+    }
+
     #page3 h1 {
         font-size: 10vw;
         margin-left: 0;
+        padding-left: 10vw;
     }
+
     #page3 h1::before {
         font-size: 5vw;
         left: 0;
-        top: -40%;
+        top: 15%;
     }
+
     #page3 .underline {
         margin-left: 0;
         margin-top: 4vw;
+        margin-bottom: 8vw;
     }
+
     #image_div_contener {
         flex-direction: column;
         align-items: center;
-        padding: 4vw 0;
+        padding: 0;
     }
-    .image-div, 
-    .image-div:nth-child(1) {
-        width: 90vw;
-        height: 100vw;
-        margin: 6vw 0;
+
+    .image-div {
+        width: 90vw !important;
+        height: 100vw !important;
+        margin: 6vw 0 !important;
     }
-    .page3-circle1, 
+
+    /* Interactive Rotating Circles Mobile Layout */
+    .page3-circle1,
     .page3-circle2 {
-        width: 50vw;
-        height: 50vw;
-        margin: 8vw auto;
+        width: 65vw;
+        height: 65vw;
+        margin: 10vw auto;
+        display: flex;
     }
+
     .circle-in p {
         font-size: 3.5vw;
         width: 75%;
     }
 
-
+    /* 7. Page 4 About Profile Setup */
     #page4 {
-        margin-bottom: 10vw;
+        margin-bottom: 0vw;
+        padding: 5vh 4vw;
     }
+
     #page4-content {
-        width: 90vw;
-        margin-left: 5%;
+        width: 100%;
+        margin-left: 0;
     }
+
     #page4-content h1 {
         font-size: 10vw;
+        padding-left: 10vw;
     }
+
     #page4-content h1::before {
         font-size: 5vw;
         left: 0;
-        top: -40%;
+        top: 15%;
     }
-    #page4-content > p {
-        font-size: 5.5vw;
+
+    #page4-content .underline {
+        margin: 8vw 0;
+    }
+
+    #page4-content>p {
+        font-size: 5vw;
         width: 100%;
+        line-height: 7vw;
         margin-bottom: 8vw;
     }
+
     #page4-flex {
         flex-direction: column;
     }
+
     #page4-flex img {
         width: 100%;
         margin-bottom: 6vw;
     }
+
     #page4-flex p {
-        font-size: 4vw;
+        font-size: 3.8vw;
         width: 100%;
         margin-left: 0;
-        line-height: 6vw;
+        line-height: 5.5vw;
     }
+
+    /* Awards Blue Overlay Box Restyle */
     #page4-blue-div {
         width: 100%;
         margin-left: 0;
         margin-top: 8vw;
         padding: 6vw;
     }
+
+    .blue-div-elem {
+        padding: 4vw 0;
+    }
+
     .blue-div-elem h4 {
         font-size: 4.5vw;
     }
+
     .blue-div-elem p {
-        font-size: 3.5vw;
-        width: 60%;
+        font-size: 3.2vw;
+        text-align: right;
     }
-    .elem h1, 
+
+    /* 8. Page 5 Infinite Marquee Text Scroller */
+    #page5 {
+        min-height: 45vh;
+        padding-bottom: 15vw;
+    }
+
+    .elem h1,
     .elem1 h1 {
-        font-size: 12vw;
+        font-size: 14vw;
     }
 
-
-
+    /* 9. Footer Components Alignment */
     #footer {
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: 15vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-top: 0vw;
     }
+
     #footer h1 {
         font-size: 10vw;
+        padding-left: 10vw;
     }
+
     #footer h1::before {
         font-size: 5vw;
         left: 0;
-        top: -40%;
+        top: 15%;
     }
+
     #footer h1 svg {
-        width: 12%;
-        margin-left: 1vw;
+        width: 10%;
+        height: auto;
+        margin-left: 2vw;
+        margin-bottom: -2%;
     }
+
+    #footer .underline {
+        margin: 6vw 0;
+    }
+
     #footer-div {
-        flex-direction: column;
-        gap: 8vw;
+        /* flex-direction: column;
+        gap: 8vw; */
         padding-right: 0;
+        padding-top: 2vw;
+        margin-bottom: 10vw;
     }
+
     .box {
         width: 100%;
     }
+
     #footer-div h6 {
-        font-size: 4vw;
-        margin-bottom: 3vw;
+        font-size: 3.5vw;
+        margin-bottom: 2.5vw;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #888;
     }
+
     #footer-div h5 {
-        font-size: 5.5vw;
+        font-size: 3vw;
+        line-height: 4vw;
+        font-weight: 400;
     }
-    #footer > h5 {
-        font-size: 4vw;
-        padding-top: 4vw;
+
+    #footer>h5 {
+        font-size: 4.5vw;
         padding-bottom: 6vw;
-    }
-    #flag {
-        height: 50vw;
+        text-align: center;
+        color: #666;
     }
 }
