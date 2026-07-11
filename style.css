@@ -236,7 +236,7 @@ body {
     position: relative;
     left: 24%;
     background-color: red;
-    background-image: url(/Assets/images/thumbnail.jpg);
+     background-image: url("./Assets/images/thumbnail.jpg");
     background-size: cover;
     background-position: center;
 }
